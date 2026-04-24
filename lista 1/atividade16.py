@@ -1,16 +1,12 @@
-qtd = int(input("Digite a quantidade de sanduíches: "))
+quantidade = int(input("Digite a quantidade de sanduíches: "))
 
-# em gramas
-queijo_g = qtd * 100
-presunto_g = qtd * 50
-carne_g = qtd * 100
+queijo_kg = (quantidade * 100) / 1000
 
-# converter para kg
-queijo_kg = queijo_g / 1000
-presunto_kg = presunto_g / 1000
-carne_kg = carne_g / 1000
+presunto_kg = (quantidade * 50) / 1000
 
-print("\nQuantidade necessária:")
-print("Queijo:", round(queijo_kg, 2), "kg")
-print("Presunto:", round(presunto_kg, 2), "kg")
-print("Carne:", round(carne_kg, 2), "kg")
+carne_kg = (quantidade * 100) / 1000
+
+print("Para fazer", quantidade, "sanduíches, você precisa de:")
+print(queijo_kg, "kg de queijo")
+print(presunto_kg, "kg de presunto")
+print(carne_kg, "kg de carne")

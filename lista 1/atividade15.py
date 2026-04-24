@@ -1,12 +1,10 @@
 valor_total = float(input("Digite o valor total da conta: R$ "))
 
-# divisão base
 parte_inteira = int(valor_total // 3)
 
 carlos = parte_inteira
 andre = parte_inteira
 
-# Felipe paga o restante (com centavos)
 felipe = valor_total - (carlos + andre)
 
 print("Carlos paga: R$ {:.2f}".format(carlos))
